@@ -1,0 +1,75 @@
+/*Small Devices*/
+@media screen and (max-width:549px){
+    .main:after{
+        visibility: hidden;
+    }
+    .main{
+        height:10%;
+    }
+    .product-grid{
+        grid-template-columns: auto;
+        
+    }
+    .contact-grid{
+        grid-template-columns: auto;
+    }
+    .header-right>div{
+        visibility:hidden;
+    }
+    .header-right>div:first-of-type{
+        visibility: visible;
+    }
+    .product-color{
+        grid-template-columns: auto;
+    }
+
+}
+
+
+
+
+
+
+
+/*Small Devices and Tablets*/
+@media only screen and (min-width:550px){
+    .main:after{
+        right:-10%;
+    } 
+    .product-grid{
+        grid-template-columns: auto auto;
+        
+    }
+    .main{
+        height:15%;
+    }
+    .contact-grid{
+        grid-template-columns: auto auto;
+    }
+    .product-color{
+        grid-template-columns: auto;
+    }
+    
+}
+
+
+@media only screen and (min-width:897px){
+    .main:after{
+        right:-30%;
+    } 
+    .product-grid{
+        grid-template-columns: auto auto auto;
+        
+    }
+    .main{
+        height:20%;
+    }
+    .contact-grid{
+        grid-template-columns: auto auto auto;
+    }
+    .product-color{
+        grid-template-columns: auto auto auto;
+    }
+    
+}
+

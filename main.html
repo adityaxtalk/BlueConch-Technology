@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                        <div class="header-left">
+                                <img src="images/beep-1@2x.png" alt="logo" id="logo">
+                        </div>
+                        <div class="header-right">
+                            <div class="icon">
+                                <img src="images/profile_close_2.png" alt="pic">
+                                <span>My profile</span>
+                            </div>
+                            <div class="icon">
+                                <img src="images/bag_3.png"alt="bag">
+                                <span>0 Items</span>
+                                <p id='item-price'>$0.00</p>
+                          
+                            </div>
+                            <div class="icon"><img src="images/search-icon.png" alt="search"></div>
+                      
+                  </div>      
+                </div>
+            </div>
+        
+        </div>
+        
+    </header>
+        <main>
+        <section class="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p id="home">Home</p>/
+                    <p id="categories">Accessories</p>
+                </div>    
+                        
+            
+            </div>
+        </div>
+
+ 
+    </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class=" content">
+                        <div class="content-left">
+                           <div class="product">
+                              <span>all categories</span>
+                            <a href="#" class="list">Accessories</a> 
+                            <a href="#" class="list">Cables & Docks</a> 
+                            <a href="#" class="list">Cases & Films</a> 
+                            <a href="#" class="list">Charging Devices</a> 
+                            <a href="#" class="list">Connected home</a> 
+                            <a href="#" class="list">Headphones</a> 
+                                                           
+                                                           
+                            </div>
+                            <div class="product " id="product-item">
+                                <span>
+                                    price
+                                </span>
+                                <br>
+                                <div id="price-text">
+                                    <p>Min</p>
+                                    <p>Max</p>
+                                </div>
+                                
+                                <div id="price-range">
+                                  <input type="number" id="price-min" placeholder="$200">
+                                  <span>-</span>        
+                                  <input type="number" id="price-max" placeholder="$500">
+                                </div>
+                                <span id="error">Error</span>
+                            </div>
+                            <div class="product">
+                              <span>color</span>
+                                <br>
+                                <div class="product-color">
+                                    <div>
+                                        <label class="color">
+                                            <input type="radio"  name="radio">
+                                            <span class="blue"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input type="radio" name="radio">
+                                            <span class="red"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="color">
+                                            <input type="radio" name="radio">
+                                            <span class="black"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input type="radio" name="radio">
+                                            <span class="yellow"></span>
+                                        </label>
+
+                                    </div>
+                                    <div>
+                                        <label class="color">
+                                            <input type="radio" name="radio">
+                                            <span class="pink"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input type="radio" name="radio">
+                                            <span class="gray"></span>
+                                        </label>
+                                    </div>
+                                                                
+                                </div>
+                                
+                            
+                              
+                            
+                            </div>
+                            <div class="product product-item">
+                             <span>Brand</span>
+                             <a href="#"><span class="alignleft">Apple</span>  <span class="alignright">99</span></a>
+                             <a href="#" ><span class="alignleft" >Beats</span><span class="alignright">99</span></a>
+                             <a href="#" ><span class="alignleft">Samsung</span><span class="alignright">99</span></a>
+                             <a href="#" ><span class="alignleft">Siemens</span><span class="alignright">99</span></a>
+                             
+                            </div>
+                            <div class="product">
+                            <a href="#" class="list" id="more">More</a>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                         <div class="main">
+                           <div class="main-text">
+                             <h2>iPhone 8</h2>
+                             <h4>Performance and design. Taken right to the edge.
+                            </h4>
+                             <div class="shop-now"><a href="#">Shop Now</a></div>  
+                           </div>   
+                         </div>
+                         <div class="nav-items">
+                               <div>13 items</div>
+                                
+                                <div class="dropdown">
+                                    <span>Sort By</span>
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Names
+                                    <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Names</a></li>
+                                        <li><a href="#">Date</a></li>
+                                        <li><a href="#">Price</a></li>
+    
+                                    </ul>
+                                </div>
+                                 <div class="dropdown">
+                                    <span>Show</span>
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">12
+                                    <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">12</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">3</a></li>
+    
+                                    </ul>
+                                </div>
+                             </div>
+                        
+                         
+                        <div class="product-grid">
+                            <div class="grid-item">
+                             <img src="images/Rectangle%205.png">
+                            <h4>Beats Solo2 On Ear Headphones </h4>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div><span>$499</span>
+                            <span>$599</span></div>
+                                
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              </div>
+                            <div class="grid-item">
+                             <img src="images/Rectangle%205.png">
+                            <h4>Beats Solo2 On Ear Headphones </h4>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div><span>$499</span>
+                            <span>$599</span></div>
+                                
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              </div>
+                            <div class="grid-item">
+                             <img src="images/Rectangle%205.png">
+                            <h4>Beats Solo2 On Ear Headphones </h4>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div><span>$499</span>
+                            <span>$599</span></div>
+                                
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              </div>
+                            <div class="grid-item">
+                             <img src="images/Rectangle%205.png">
+                            <h4>Beats Solo2 On Ear Headphones </h4>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <div><span>$499</span>
+                            <span>$599</span></div>
+                                
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              
+                            </div>
+                            <div class="grid-item">
+                                <img src="images/Rectangle%205.png">
+                                <h4>Beats Solo2 On Ear Headphones </h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div><span>$499</span>
+                                <span>$599</span></div>
+                              </div>
+                        </div>
+                        <div class="pagination">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                
+                            
+                        </div>
+                        
+                    </div>
+                                               
+                    </div>
+
+               </div>
+
+            </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <div class="contact-grid">
+                       <div class="contact-grid-item">
+                         <img src="images/beep@2x.png" alt="beep logo" id="beep2">
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting indudtry. Lorem Ipsum has been the industry's standard dummy text ever. Since the 1500s, whwn an unknown printer.</p>
+                        </div>
+                        <div class="contact-grid-item">
+                            <h2>Follow Us</h2>
+                            
+                        <p>Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                        <div id="social">
+                            <img src="images/facebook.png">
+                            <img src="images/twitter.png">
+                        </div>
+                        </div>
+                        <div class="contact-grid-item">
+                            <h2>Contact Us</h2>
+                            <p>
+                              My Company, 4578 Marmora Road, Glasgow<br>
+                              D04 89GR<br>
+                              Call us now: 0123-456-789<br>
+                              Email: support@whatever.com
+                                
+                            </p>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </main>
+    <footer class="footer">
+       
+        
+        
+        <div class="container">
+                
+                
+                <div class="row">
+                   <div class="col-md-10 col-md-offset-1">
+                       <div id="footer-left">
+                           <span>&copy; 2021 Ecommerce site by www.beep.com </span>
+                       </div>
+                       <div id="footer-right">
+                            <div><img src="images/Western-union.png"></div>
+                            <div><img src="images/Group%2019.png"></div>
+                            <div><img src="images/Paypal.png"></div>
+                            <div class="visa"><img src="images/Shape%20328.png"></div>
+                        </div>
+                                    
+                    </div>    
+                </div>            
+        </div>
+        
+    
+    </footer>
+</body>
+</html>
